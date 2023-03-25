@@ -6,7 +6,7 @@ namespace Multiplayer;
 
 public partial class Main : Node
 {
-	[Export] public NodePath NodePathTest { get; set; }
+	[Export] public NodePath NodePathTest;
 
 	public override void _Ready()
 	{

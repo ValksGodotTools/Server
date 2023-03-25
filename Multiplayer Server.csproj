@@ -3,8 +3,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <LangVersion>11</LangVersion>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
-    <RootNamespace>MultiplayerServer</RootNamespace>
+    <RootNamespace>Multiplayer</RootNamespace>
 	<DefineConstants>SERVER</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
