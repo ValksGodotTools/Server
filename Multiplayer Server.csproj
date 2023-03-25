@@ -5,6 +5,7 @@
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <!--<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>-->
     <RootNamespace>MultiplayerServer</RootNamespace>
+	<DefineConstants>SERVER</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="ENet-CSharp" Version="2.4.8" />

@@ -1,3 +1,23 @@
-[gd_scene format=3 uid="uid://b2lxny8b04fj6"]
+[gd_scene load_steps=3 format=3 uid="uid://b2lxny8b04fj6"]
+
+[ext_resource type="Script" path="res://Scripts/Main.cs" id="1_nsp37"]
+[ext_resource type="PackedScene" uid="uid://c4o3fj5cr8ua7" path="res://GodotUtils/Prefabs/UIConsole.tscn" id="2_wi10i"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_nsp37")
+NodePathTest = null
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control Panel" type="PanelContainer" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start Server" type="Button" parent="CanvasLayer/Control Panel"]
+layout_mode = 2
+text = "Start Server"
+
+[node name="UIConsole" parent="CanvasLayer" instance=ExtResource("2_wi10i")]
+visible = false
+
+[connection signal="pressed" from="CanvasLayer/Control Panel/Start Server" to="." method="_on_start_server_pressed"]

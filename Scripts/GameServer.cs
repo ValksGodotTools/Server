@@ -1,4 +1,4 @@
-﻿namespace MultiplayerServer;
+﻿namespace Multiplayer;
 
 public class GameServer : ENetServer
 {
